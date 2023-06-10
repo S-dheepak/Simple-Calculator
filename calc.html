@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Creating Simple Calculator Using html,css,javascript</title>
+	<link rel="stylesheet" href="calccss.css">
+	<script src="calcjs.js"></script>
+</head>
+<body>
+<table class="calc">
+	<tr>
+		<td colspan="3"><input type="text" name="table" class="display-box" id="result" disabled></td>
+		<td><input type="button" name="table" id="btn" value="C" onclick="clearScreen()"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="table" value="1" onclick="display('1')"></td>
+		<td><input type="button" name="table" value="2" onclick="display('2')"></td>
+		<td><input type="button" name="table" value="3" onclick="display('3')"></td>
+		<td><input type="button" name="table" value="/" onclick="display('/')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="table" value="4" onclick="display('4')"></td>
+		<td><input type="button" name="table" value="5" onclick="display('5')"></td>
+		<td><input type="button" name="table" value="6" onclick="display('6')"></td>
+		<td><input type="button" name="table" value="-" onclick="display('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="table" value="7" onclick="display('7')"></td>
+		<td><input type="button" name="table" value="8" onclick="display('8')"></td>
+		<td><input type="button" name="table" value="9" onclick="display('9')"></td>
+		<td><input type="button" name="table" value="+" onclick="display('+')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="table" value="." onclick="display('.')"></td>
+		<td><input type="button" name="table" value="0" onclick="display('0')"></td>
+		<td><input type="button" name="table" id="btn" value="=" onclick="calculate()"></td>
+		<td><input type="button" name="table" value="*" onclick="display('*')"></td>
+	</tr>
+		</table>	
+</body>
+</html>
